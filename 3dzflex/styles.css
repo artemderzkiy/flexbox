@@ -1,0 +1,196 @@
+@import url('common.css');
+
+.top{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 0px;
+    margin: 0 0 30px 0;
+}
+
+.logo {
+    position: relative; 
+    width: 90px;
+    height: 30px;
+    margin-left: 80px;
+}
+
+.logo:before{
+    content:'';
+    position: absolute;
+    left: -60px;
+    top: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.item{
+     display: flex;
+    width: 60%;
+}
+
+.list {
+     width: 24%;
+    height: 50px;
+    margin-left: 1%;
+}
+
+.main{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; 
+    align-items: center;
+    overflow: hidden;
+}
+
+.m-text{
+    width: 50%;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5em;
+    flex: 2 0 auto;
+}
+
+.m-text-title{
+    font-size: 28px;
+}
+
+.m-image{
+     width: 40%;
+    min-height: 360px;
+    flex: 2 0 auto;
+}
+
+.content{
+    display: flex;
+     flex-flow: row wrap;
+    margin: 40px 0 0;
+}
+
+.c-block, .c-article, .c-comment{
+   
+    width: 30%;
+}
+
+
+.b-list{
+    min-height: 200px;
+    margin: 0 0 30px 0;
+}
+
+.c-article{
+    font-size: 14px;
+    margin: 0 0 0 4%;
+}
+
+.a-list{
+    margin: 0 0 30px 0;
+    line-height: 1.5em;
+}
+
+.c-comment{
+    font-size: 14px;
+    margin: 0 0 0 4%;
+}
+
+.c-list{
+    display: flex;
+    
+    margin: 0 0 30px 0;
+    line-height: 1.5em;
+}
+
+.ava{
+   flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.text{
+   // margin-left: 20px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+
+
+    .c-block{
+        display: flex;
+         width: 100%;
+        margin: 0 0 30px 0;
+        overflow: hidden;
+    }
+
+    .b-list {
+         width: 32%;
+        margin: 0 0 0 2%;
+    }
+
+    .b-list:first-child{
+        margin: 0;
+    }
+
+    .c-article{
+        width: 48%;
+        margin: 0;
+    }
+
+    .c-comment {
+        width: 48%;
+        margin: 0 0 0 4%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+.content {
+    display: flex;
+     flex-flow: column wrap;
+    justify-content: space-between; 
+        }
+
+
+    .logo {
+            }
+
+    .item{
+        width: 100%;
+        margin: 30px 0 0;
+    }
+
+    .list {
+        margin: 0 1% 0 0;
+    }
+
+    .m-text{
+       
+        width: 100%;
+        margin: 0 0 40px 0;
+    }
+
+    .m-image {
+        
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .c-block{
+         width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .b-list {
+        margin: 0 0 30px 0;
+    }
+
+    .c-article{
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .c-comment {
+        width: 100%;
+        margin: 0;
+    }
+}
